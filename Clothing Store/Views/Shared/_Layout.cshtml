@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="hy">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>@ViewData["Title"] - SARGO</title>
+
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            <a href="/">SARGO</a>
+        </div>
+
+        <nav>
+            <a href="/#newcollection">New Collection</a>
+            <a href="/#sale">SALE</a>
+            <a href="/#classic">Դասական</a>
+            <a href="/#trendy">Թրենդային</a>
+            <a href="/#bestseller">BEST SELLER</a>
+            <a href="/#contact">Կապ մեզ հետ</a>
+        </nav>
+    </header>
+
+
+    <!-- PAGE CONTENT -->
+    <main>
+        @RenderBody()
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 SARGO. Բոլոր իրավունքները պաշտպանված են։</p>
+    </footer>
+
+
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>
